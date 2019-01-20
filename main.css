@@ -1,5 +1,5 @@
 ul{
-    border-radius: 10px;
+    border-radius: 1px;
     background-color: #333333;
     color:white;
     list-style-type: none;
@@ -40,7 +40,7 @@ a:link{
 
 .ff{
   
-    border-radius: 10px;
+    border-radius: 1px;
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(252, 253, 255,9));
 }
 
@@ -84,10 +84,14 @@ ul.row{
 }
 
 .container{
-    background-image: url("/img/26.jpg")
+    background-image: url("/img/26.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
 
 .aboutm{
     background: #ffff;
     text-align: start;
+    border-radius: 1px;
 }
