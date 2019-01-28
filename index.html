@@ -4,6 +4,9 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ecc-code</title>
+    <script src="main.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js'></script> 
     <meta name=”description” content="Website,Edgar Rolando Cosajay Campos,CV,Programacíon" />
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="img/terminal.png"/>
@@ -14,6 +17,7 @@
     
 </head>
 <body class="container">
+    <div class="jm-loadingpage"></div>
     
 
     <header>
@@ -57,19 +61,20 @@
                 En camino a ser Full Stack Developer.
         </article>    
         <article class="col-3 d-none d-md-block">
-            <div class="ta-bla" style="background-color:#CCCCCC"><div>Dev-Ops</div></div>
-            <div class="ta-bla" style="background-color:#97a7a8"><div>Front-End</div></div>
-            <div class="ta-bla" style="background-color:skyblue"><div>Mobile-dev</div></div> 
-            <div class="ta-bla" style="background-color:#006666"><div>DatabaseAdmin</div></div>
-            <div class="ta-bla" style="background-color:#008584"><div>Back-End</div></div>
+            <div class="ta-bla" style="background-color:#E8D5B7"><div>Dev-Ops</div></div>
+            <div class="ta-bla" style="background-color:teal"><div>Front-End</div></div>
+            <div class="ta-bla" style="background-color:#FC3A51"><div>Mobile-dev</div></div> 
+            <div class="ta-bla" style="background-color:#F5B349"><div>DatabaseAdmin</div></div>
+            <div class="ta-bla" style="background-color:#E8D5B9"><div>Back-End</div></div>
         </article>
     </div> 
     
     <div class="row">
-        <aside class="col-6 main">
-
+        <aside class="col-12 main">
+               
+            
         </aside>
-        <aside class="col-6 comple">
+        <aside class="col-12 comple">
 
         </aside>
     </div>
@@ -79,5 +84,10 @@
 
         </div>
     </footer>
+    <script>
+            $(document).ready(function() {
+             $(".jm-loadingpage").fadeOut("slow");;
+            });
+            </script>
 </body>
 </html>
