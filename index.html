@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ecc-code</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
     <script src="main.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js'></script> 
@@ -14,12 +15,23 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap-grid.css'/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    
-</head>
-<body class="container">
-    <div class="jm-loadingpage"></div>
-    
+   <script>
+   document.onload = function(){
 
+
+        var body = document.body;
+        var html = document.documentElement; 
+        var bodyH = Math.max(body.scrollHeight, body.offsetHeight, body.getBoundingClientRect().height, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        var x = bodyH;
+        console.log("tamaño: "+ x);
+    }
+   </script> 
+</head>
+<body>
+    
+   <div id="mainCanvas">
+
+    <div class="container">
     <header>
       
         <ul class="row ">
@@ -49,6 +61,7 @@
             <a class="gplus-ic mr-3" role="button"><a class="fab fa-lg fa-google-plus-g"></a></a>
             <a class="email-ic mr-3" role="button"><a class="far fa-lg fa-envelope"></a></a>
             <p class="bot"></p>
+
         </div>
     </div>
 
@@ -89,10 +102,8 @@
 
         </div>
     </footer>
-    <script>
-            $(document).ready(function() {
-             $(".jm-loadingpage").fadeOut("slow");;
-            });
-            </script>
+
+        </div>  
+    </div> 
 </body>
 </html>
