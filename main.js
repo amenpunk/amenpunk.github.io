@@ -91,3 +91,11 @@ function draw() {
     particleBreakDistance = min(particleBreakDistance + 1, width / 12);
     
 }
+
+$('document').ready(function(){
+	$('.skillbar').each(function(){
+		$(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},6000);
+	});
+});
