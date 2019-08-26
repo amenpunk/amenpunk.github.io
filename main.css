@@ -31,11 +31,19 @@ a:link{
     color:white;
 }
 
+
+
 .cover{
     padding-bottom: 5px;
     padding-top: 5px; 
     height: 250px;
     border-radius:50%;
+}
+
+
+.umg-logo{
+    height: 50%;
+    width: 80%;
 }
 
 .ff{
@@ -83,7 +91,7 @@ ul.row{
 }
 
 .container{
-    background-image: url("https://picserio.com/data/out/10/white-hd-wallpapers-1080p_2355705.jpg");    
+    background-image: url("http://i.stack.imgur.com/vhoa0.jpg");    
     background-size:     cover;              
     background-repeat:   no-repeat;
     background-position: center center;
