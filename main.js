@@ -4,7 +4,7 @@ var maxParticles, particleBreakDistance, repelDist;
 var particles = [];
 
 function setup() {
-    canvas = createCanvas(windowWidth, windowHeight*2.1);
+    canvas = createCanvas(windowWidth, windowHeight*2.3);
     
     //canvas = createCanvas(windowWidth, windowH);
 
