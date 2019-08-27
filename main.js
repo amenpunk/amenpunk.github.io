@@ -1,3 +1,7 @@
+
+//this code is an adapted from 
+//http://dollarakshay.com/particles.html
+
 var canvas;
 
 var maxParticles, particleBreakDistance, repelDist;

@@ -7,26 +7,28 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
     <script src="main.js"></script>
+    <script src="cont.js"></script>
     <meta name=”description” content="website,Edgar Rolando Cosajay Campos,CV,Programación" />
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="img/terminal.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap-grid.css'/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
-    
+   
+   <div id="agregar">
    <div id="mainCanvas" class="d-none d-md-block"></div>
-
+    
     <div class="container">
     <header>
       
         <ul class="row ga ">
                 <li class="col gg"><a href="/index.html"><img   class="iconff d-md-none" src="/img/gaming.png"><h1 class="d-none d-md-block">Sobre Mi</h1></a></li>
-                <li class="col gg"><a href="#"><img   class="iconff d-md-none" src="/img/book.png"><h1 class="d-none d-md-block">Portafolio  </h1></a></li>
+                <li class="col gg"><a href="/work.html"><img   class="iconff d-md-none" src="/img/book.png"><h1 class="d-none d-md-block">Portafolio  </h1></a></li>
                 <li class="col gg"><a href="/unix.html"><img   class="iconff d-md-none" src="/img/linux.png"><h1 class="d-none d-md-block">Unix Workflow  </h1></a></li>
-                <li class="col gg"><a href="#"><img   class="iconff d-md-none" src="/img/phone-book.png"><h1 class="d-none d-md-block">Contacto  </h1></a></li>
+                <li class="col gg"><a href="/contact.html"><img   class="iconff d-md-none" src="/img/phone-book.png"><h1 class="d-none d-md-block">Contacto  </h1></a></li>
         </ul>
     </header>
 
@@ -194,32 +196,19 @@
                 <p><i style="color:#1e1e" class="fas fa-check-square"></i><strong> Team Work</strong></p>
                 <p><i style="color:teal" class="fas fa-check-square"></i><strong> Curiosity/Creativity</strong></p>
 
-            </div>
+                </div>
+            </aside>
         </aside>
-    </aside>
 
-
-
-
-    <footer class="row">
-        <div class="col pie">
-
-        </div>
-    </footer>
-
+            <footer class="row">
+                <div class="col pie letter-min">
+                    <h3 class="letter">Acerca de esta página</h3>
+                    Esta página fue desrollada por Edgar Rolando Cosajay Campos &copy; utilizando la 
+                    metodología mobile first por medio de bootstrap 4 & Jquery el código fuente de esta pagina lo puedes
+                    econtrar en el siguente enlace <a style="color:blue" href="https://github.com/amenpunk/amenpunk.github.io">https://github.com/amenpunk/amenpunk.github.io</a> 
+                </div>
+            </footer>
         </div>  
-    <script>
-        (function(){
-        
-        //var existe = document.getElementsByTagName("canvas")
-        //let jaja = document.getElementsByTagName("Canvas")
-        //var gg = document.getElementById('defaultCanvas0'); 
-        //jaja.classList.add(" d-none d-md-block");
-        let lienzo = document.querySelector('.p5Canvas');
-   //     console.log(typeof lienzo);
-      
-
-        }());
-    </script>
+    </div>
 </body>
 </html>
