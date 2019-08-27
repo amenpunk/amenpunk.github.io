@@ -7,8 +7,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
     <script src="main.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js'></script> 
-    <meta name=”description” content="5ebsite,Edgar Rolando Cosajay Campos,CV,Programación" />
+    <meta name=”description” content="website,Edgar Rolando Cosajay Campos,CV,Programación" />
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="img/terminal.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,12 +17,12 @@
 </head>
 <body>
     
-   <div id="mainCanvas">
+   <div id="mainCanvas" class="d-none d-md-block"></div>
 
     <div class="container">
     <header>
       
-        <ul class="row gg">
+        <ul class="row ga ">
                 <li class="col gg"><a href="/index.html"><img   class="iconff d-md-none" src="/img/gaming.png"><h1 class="d-none d-md-block">Sobre Mi</h1></a></li>
                 <li class="col gg"><a href="#"><img   class="iconff d-md-none" src="/img/book.png"><h1 class="d-none d-md-block">Portafolio  </h1></a></li>
                 <li class="col gg"><a href="/unix.html"><img   class="iconff d-md-none" src="/img/linux.png"><h1 class="d-none d-md-block">Unix Workflow  </h1></a></li>
@@ -209,6 +208,18 @@
     </footer>
 
         </div>  
-    </div> 
+    <script>
+        (function(){
+        
+        //var existe = document.getElementsByTagName("canvas")
+        //let jaja = document.getElementsByTagName("Canvas")
+        //var gg = document.getElementById('defaultCanvas0'); 
+        //jaja.classList.add(" d-none d-md-block");
+        let lienzo = document.querySelector('.p5Canvas');
+   //     console.log(typeof lienzo);
+      
+
+        }());
+    </script>
 </body>
 </html>

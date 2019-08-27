@@ -5,7 +5,7 @@ var particles = [];
 
 function setup() {
     canvas = createCanvas(windowWidth, windowHeight*2.4);
-    
+    //    console.log(canvas.classList[1]);
     //canvas = createCanvas(windowWidth, windowH);
 
     console.log("Canvas Size :" + width + "x" + height);
@@ -89,7 +89,10 @@ function draw() {
     background(30,30,30);
     drawParticles();
     particleBreakDistance = min(particleBreakDistance + 1, width / 12);
+    //var gg = document.getElementsByClassName('p5Canvas');
+    //gg.className += " d-none d-md-block"
     
+  //  console.log(canvas.classList);
 }
 
 $('document').ready(function(){
@@ -97,5 +100,6 @@ $('document').ready(function(){
 		$(this).find('.skillbar-bar').animate({
 			width:jQuery(this).attr('data-percent')
 		},6000);
-	});
+    });
+        
 });
