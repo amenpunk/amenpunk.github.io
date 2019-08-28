@@ -11,7 +11,7 @@ $('document').ready(function(){
 
     $(window).resize(function(){
 
-    if(screen.width < 750){
+    if(screen.width < 770){
        front.classList.add('unoe');
     }else{
        front.classList.remove('unoe');
