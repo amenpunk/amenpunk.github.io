@@ -293,12 +293,12 @@ ul.row{
 }
 
 .fa-check{
-    color: #fff;
+    color: #1e1e1e;
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color:rgba(255,255,255,0.5);
   position: relative;
 }
 
@@ -307,7 +307,7 @@ ul.row{
 }
 
 .topnav a {
-  color: white;
+  color: #1e1e1e;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -315,7 +315,7 @@ ul.row{
 }
 
 .topnav a.icon {
-   background: rgba(0, 0, 0, 0.1);
+   background:rgba(255,255,255,0.9);
   display: block;
   position: absolute;
   right: 0;
@@ -323,13 +323,13 @@ ul.row{
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #ffff;
   color: black;
 }
 
 .active {
-  background:rgba(0,0,0,0.1); 
-  color: white;
+  background: rgba(255,255,255,0.6);
+  color: black;
 }
 
 #invi{
@@ -344,4 +344,8 @@ ul.row{
 div.col.letter{
     padding:0;
     margin: 0;
+}
+
+#agregar > div.container > header > div{
+    padding: 0;
 }

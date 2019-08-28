@@ -7,30 +7,47 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
     <script src="main.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js'></script> 
-    <meta name=”description” content="5ebsite,Edgar Rolando Cosajay Campos,CV,Programación" />
+    <script src="cont.js"></script>
+    <meta name=”description” content="website,Edgar Rolando Cosajay Campos,CV,Programación" />
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="img/terminal.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="unix.css" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap-grid.css'/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
-    
-   <div id="mainCanvas">
-
+   
+   <div id="agregar">
+   <div  class="d-none d-md-block" id="mainCanvas"></div>
     <div class="container">
-    
     <header>
       
-        <ul class="row ga">
-                <li class="col gg"><a href="/index.html"><img   class="iconff d-md-none" src="/img/gaming.png"><h1 class="d-none d-md-block">Sobre Mi</h1></a></li>
-                <li class="col gg"><a href="#"><img   class="iconff d-md-none" src="/img/book.png"><h1 class="d-none d-md-block">Portafolio  </h1></a></li>
-                <li class="col gg"><a href="#"><img   class="iconff d-md-none" src="/img/linux.png"><h1 class="d-none d-md-block">Unix Workflow  </h1></a></li>
-                <li class="col gg"><a href="#"><img   class="iconff d-md-none" src="/img/phone-book.png"><h1 class="d-none d-md-block">Contacto  </h1></a></li>
+        <ul class="row ga ">
+                <li class="col gg"><a href="/index.html"><h1 class="d-none d-md-block">Sobre Mi</h1></a></li>
+                <li class="col gg"><a href="/work.html"><h1 class="d-none d-md-block">Portafolio  </h1></a></li>
+                <li class="col gg"><a href="/unix.html"><h1 class="d-none d-md-block">Unix Workflow  </h1></a></li>
+                <li class="col gg"><a href="/contact.html"><h1 class="d-none d-md-block">Contacto  </h1></a></li>
         </ul>
+
+        <div class="row letter iconff d-md-none">
+            <div class="col letter">
+                <div class="topnav">
+                    <a href="#home" class="active"><p id="invi">menu</p></a>
+                    <div id="myLinks">
+                      <a href="/index">Sobre Mi</a>
+                      <a href="/work.html">Portafolio</a>
+                      <a href="/unix.html">Unix Workflow</a>
+                      <a href="/contact.html">Contacto</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
+            </div>
+        </div>
+
     </header>
 
 
@@ -176,13 +193,18 @@
         </aside>
     </div>
 
-    <footer class="row">
-        <div class="col pie">
 
-        </div>
-    </footer>
 
+
+            <footer class="row">
+                <div class="col pie letter-min">
+                    <h3 class="letter">Acerca de esta página</h3>
+                    Esta página fue desrollada por Edgar Rolando Cosajay Campos &copy; utilizando la 
+                    metodología mobile first por medio de bootstrap 4 & Jquery el código fuente de esta pagina lo puedes
+                    econtrar en el siguente enlace <a style="color:blue" href="https://github.com/amenpunk/amenpunk.github.io">https://github.com/amenpunk/amenpunk.github.io</a> 
+                </div>
+            </footer>
         </div>  
-    </div> 
+    </div>
 </body>
 </html>
