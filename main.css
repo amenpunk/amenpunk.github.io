@@ -281,10 +281,12 @@ ul.row{
     align-content: center;
     text-align: center;
     padding-left: 10%;
-    height: 100px;
+    height: auto;
     margin-top: 15px;
     margin-bottom: 15px;
     background:rgba(255,255,255,0.9); 
+    padding-bottom:5%
+
 }
 
 .fa-check{
