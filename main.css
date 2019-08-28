@@ -6,6 +6,10 @@ a.fab:visited{
     color:#1e1e1e;
 }
 
+a.fab:link{
+    color:#1e1e1e;
+}
+
 .unoe{
     background-color: #1e1e1e;
     padding: 0;
@@ -279,6 +283,7 @@ ul.row{
     padding-left: 10%;
     height: 100px;
     margin-top: 15px;
+    margin-bottom: 15px;
     background:rgba(255,255,255,0.9); 
 }
 
