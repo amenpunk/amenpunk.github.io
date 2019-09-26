@@ -107,8 +107,8 @@ a.fab:link{
 }
 
 .polygon{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .content{
@@ -222,6 +222,10 @@ a:link{
 #bot{
     padding-top:20px;
     border-bottom: 2px solid #1e1e1e; 
+}
+
+.fab{
+    padding-left: 5px;
 }
 
 .far:hover{
