@@ -40,6 +40,7 @@
         <div class="d-none d-md-block" id="mainCanvas"></div>
         <div class="container">
             <header>
+
                 <ul class="row ga ">
                     <li class="col gg"><a href="/index.html">
                             <h1 class="d-none d-md-block">Sobre Mi</h1>
@@ -51,10 +52,31 @@
                             <h1 class="d-none d-md-block">Unix Workflow </h1>
                         </a></li>
                     <li class="col gg"><a href="/mas.html">
-                            <h1 class="d-none d-md-block">Otros</h1>
+                            <h1 class="d-none d-md-block">Otros </h1>
                         </a></li>
                 </ul>
+
+                <div class="row letter iconff d-md-none">
+                    <div class="col letter">
+                        <div class="topnav">
+                            <a href="#home" class="active">
+                                <p id="invi">menu</p>
+                            </a>
+                            <div id="myLinks">
+                                <a href="/index">Sobre Mi</a>
+                                <a href="/work.html">Portafolio</a>
+                                <a href="/unix.html">Unix Workflow</a>
+                                <a href="/mas.html">Otros</a>
+                            </div>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </header>
+
 
             <div class="row">
                 <div class="col">
@@ -217,18 +239,21 @@
                     <!-- inicio de target-->
                     <h1 class="h1">Clínica Médica</h1>
                     <p>
-                        Este proyecto fue realizado con el Framework .Net Core y la base de datos Sql Server, 
-                        con este proyecto se logro conocer como funciona el ORM de .Net (Entity Framework) el lenguaje integrado de consultas
+                        Este proyecto fue realizado con el Framework .Net Core y la base de datos Sql Server,
+                        con este proyecto se logro conocer como funciona el ORM de .Net (Entity Framework) el lenguaje
+                        integrado de consultas
                         LINQ y su modelo de vistas razor,
-                        también a su vez se generaron api's con autenticación por medio de  Cookie's en el navegador,
-                        estas api's fueron consumidas en el front-end con Javascript/Jquery. 
-                        El proyecto en general consiste en un sistema de administración de pacientes de una clínica médica,
-                        el administrador  puede realizar la siguientes operaciones:
+                        también a su vez se generaron api's con autenticación por medio de Cookie's en el navegador,
+                        estas api's fueron consumidas en el front-end con Javascript/Jquery.
+                        El proyecto en general consiste en un sistema de administración de pacientes de una clínica
+                        médica,
+                        el administrador puede realizar la siguientes operaciones:
                         <ul>
                             <li>Administrar pacientes</li>
                             <li>Administrar citas</li>
                             <li>Generar expedientes</li>
-                            <li>Registrar consultas y sus resultados (mediciones,recetas,diagnósticos y ordenes de laboratorio)</li>
+                            <li>Registrar consultas y sus resultados (mediciones,recetas,diagnósticos y ordenes de
+                                laboratorio)</li>
                             <li>Generar diferentes reportes</li>
                             <li>Facturar expedientes</li>
                         </ul>
@@ -297,9 +322,10 @@
     </div>
 </body>
 <style>
-.d-none {
-    font-size: 18px !important;
-    padding-top:15px;
-}
+    .d-none {
+        font-size: 18px !important;
+        padding-top: 12px;
+    }
 </style>
+
 </html>
