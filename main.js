@@ -7,11 +7,18 @@ var canvas;
 var maxParticles, particleBreakDistance, repelDist;
 var particles = [];
 
-function setup() {
+function getScrollbarWidth() {
+    return window.innerWidth - document.documentElement.clientWidth;
+}
 
-    var exp = document.body.scrollHeight; 
-    //console.log("tamaño:" + exp)
-    canvas = createCanvas(windowWidth, exp+30);
+function setup() {
+    
+    var x  = parseInt(window.innerWidth) - getScrollbarWidth();
+    var y = document.body.scrollHeight + 30
+
+    
+    canvas = createCanvas(x,y);
+    //canvas = createCanvas(windowWidth, exp+30);
     //canvas = createCanvas(windowWidth, windowHeight);
     //    console.log(canvas.classList[1]);
     //canvas = createCanvas(windowWidth, windowH);
