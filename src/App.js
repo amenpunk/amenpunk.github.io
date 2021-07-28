@@ -1,20 +1,14 @@
-import { Container, Row, Col } from 'react-bootstrap'
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import './components/main.css';
+import Header from './components/Header';
 
 function App() {
     return (
-        <>
-            <Container fluid className="Main">
-                <Row>
-                    <Col>1 of 2</Col>
-                    <Col>2 of 2</Col>
-                </Row>
-                <Row>
-                    <Col>1 of 3</Col>
-                    <Col>2 of 3</Col>
-                    <Col>3 of 3</Col>
-                </Row>
-            </Container>
-        </>
+        <Router>
+            <div className="container">
+                <Header/>
+            </div>
+        </Router>
     );
 }
 
