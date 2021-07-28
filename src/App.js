@@ -1,15 +1,16 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import './components/main.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Container from './components/Container';
 
 function App() {
     return (
         <Router>
-            <div className="container">
+            <Container>
                 <Header/>
                 <Footer/>
-            </div>
+            </Container>
         </Router>
     );
 }
