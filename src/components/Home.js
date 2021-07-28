@@ -17,11 +17,11 @@ export function Home() {
                     <p class="inf"><b>Nombre: </b>Edgar Rolando Cosajay Campos</p>
                     <p class="inf"><b>Correo: </b>ecc.code@gmail.com</p>
 
-                    <a href="https://github.com/amenpunk" class="fab fa-lg fa-github"></a>
-                    <a href="https://www.linkedin.com/in/ecc-code/" class="fab fa-lg fa-linkedin-in"></a>
-                    <a class="fab fa-stack-overflow"></a>
-                    <a class="fab far fa-lg fa-envelope"></a>
-                    <p class="bot"></p>
+                    <a href="https://github.com/amenpunk" > <span class="fab fa-lg fa-github"></span>  </a>
+                    <a href="https://www.linkedin.com/in/ecc-code/"><span  class="fab fa-lg fa-linkedin-in"></span></a>
+                    <a href="/"><span class="fab fa-stack-overflow"></span></a>
+                    <a href="/"><span class="fab far fa-lg fa-envelope"></span> </a>
+                    <p href="/"><span class="bot"></span></p>
                 </div>
             </div>
 
@@ -31,7 +31,7 @@ export function Home() {
                 <article class="col text-center aboutm letter">
                     <div class="row align-items-center">
                         <div class="col-md-3">
-                            <img class="umg-logo" src="https://flow.org/assets/featurette-faster-56e57b5eb50445d2903590e1553797e4637fcc0aa779b09bc9c5c8a8c08a1645.gif"/>
+                            <img alt="profile_picture" class="umg-logo" src="https://flow.org/assets/featurette-faster-56e57b5eb50445d2903590e1553797e4637fcc0aa779b09bc9c5c8a8c08a1645.gif"/>
                         </div>
                         <p class="col ">    
                             Estudiante de Ingeniería en Sistemas en la Universidad Mariano Gálvez de Guatemala,
@@ -43,7 +43,7 @@ export function Home() {
                 </article>    
                 <article class="col-5 d-none d-md-block">
                     <a class="ta-bla"  href="https://github.com/amenpunk">
-                        <img align="left" class="tech" src="https://github-readme-stats.vercel.app/api?username=amenpunk&show_icons=true&theme=graywhite&count_private=true" />
+                        <img align="left" alt="estadisticas_github" class="tech" src="https://github-readme-stats.vercel.app/api?username=amenpunk&show_icons=true&theme=graywhite&count_private=true" />
                     </a>
                 </article>
             </div> 

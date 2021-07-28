@@ -3,6 +3,29 @@ import {  Switch, Route, Link } from "react-router-dom";
 import { Home } from './Home';
 
 export default class Header extends React.Component{
+
+    myFunction = () =>  {
+        let x = this.myLinks.current;
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
+    componentDidMount(){
+        this.myLinks.current.style.display = "none";
+    }
+
+    hiddeNav = () => {
+        this.myLinks.current.style.display = "none";
+    }
+
+    constructor(){
+        super();
+        this.myLinks = React.createRef();
+    }
+
     render() {
         return(
             <header>
@@ -15,16 +38,17 @@ export default class Header extends React.Component{
                 <div class="row letter iconff d-md-none">
                     <div class="col letter">
                         <div class="topnav">
-                            <a href="#home" class="active"><p id="invi">menu</p></a>
-                            <div id="myLinks">
-                                <a href="/index">Sobre Mi</a>
-                                <a href="/work.html">Portafolio</a>
-                                <a href="/unix.html">Workflow</a>
-                                <a href="/mas.html">Otros</a>
+                            <Link onClick={ this.hiddeNav } to="/home" className="active"><p id="invi">menu</p></Link>
+                            <div ref={ this.myLinks }>
+                                <Link onClick={this.hiddeNav} to="/index">Sobre Mi</Link>
+                                <Link onClick={this.hiddeNav} to="/work">Portafolio</Link>
+                                <Link onClick={this.hiddeNav} to="/unix">Workflow</Link>
+                                <Link onClick={this.hiddeNav} to="/mas">Otros</Link>
                             </div>
-                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <Link to="#" class="icon" onClick={ this.myFunction }>
                                 <i class="fa fa-bars"></i>
-                            </a>
+                            </Link>
+
                         </div>
                     </div>
                 </div>
@@ -39,4 +63,5 @@ export default class Header extends React.Component{
             </header>
         )
     }
+
 }
