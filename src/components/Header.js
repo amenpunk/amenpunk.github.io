@@ -1,8 +1,8 @@
 import React from "react";
 import {  Switch, Route, Link } from "react-router-dom";
+import { Home } from './Home';
 
 export default class Header extends React.Component{
-
     render() {
         return(
             <header>
@@ -29,7 +29,9 @@ export default class Header extends React.Component{
                     </div>
                 </div>
                 <Switch>
-                    <Route path="/index"> Hola mundo </Route>
+                    <Route path="/index">
+                        <Home/>
+                    </Route>
                     <Route path="/work"> mi trabajo</Route>
                     <Route path="/unix"> linux master race</Route>
                     <Route path="/more"> more</Route>
@@ -37,5 +39,4 @@ export default class Header extends React.Component{
             </header>
         )
     }
-
 }
