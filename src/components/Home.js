@@ -1,12 +1,20 @@
+import React, { useState, useEffect, useRef  } from 'react' 
+
+
 export function Home() {
+
+    useEffect( () => {
+        let bars =  document.getElementsByClassName('skillbar')
+        for(let x = 0 ; x < bars.length; x++ ){
+            let width = bars[x].getAttribute('data-percent')
+            bars[x].animate([ { width: width }, ], { duration: 6000, iterations : 1, fill : "forwards" }) 
+        }
+
+    }, []) 
+
+
     return (
         <>
-            <div class="row">
-                <div class="col-12 content polygon">
-                    <p>Desarollador Backend</p>
-                </div>
-            </div>   
-
             <div class="row justify-content-center ff letter">
                 <div class="col-auto cover">
                     <img src="https://media-exp1.licdn.com/dms/image/C4E03AQF0PmyXp93Zcw/profile-displayphoto-shrink_200_200/0/1594601021043?e=1632960000&v=beta&t=QPMrooLKO8JPz4eWyPUz24SCyGDcuNjkksY_zYNwZYI" class="zoom figure-img img-fluid cover" alt=""/>
@@ -17,11 +25,13 @@ export function Home() {
                     <p class="inf"><b>Nombre: </b>Edgar Rolando Cosajay Campos</p>
                     <p class="inf"><b>Correo: </b>ecc.code@gmail.com</p>
 
-                    <a href="https://github.com/amenpunk" > <span class="fab fa-lg fa-github"></span>  </a>
-                    <a href="https://www.linkedin.com/in/ecc-code/"><span  class="fab fa-lg fa-linkedin-in"></span></a>
-                    <a href="/"><span class="fab fa-stack-overflow"></span></a>
-                    <a href="/"><span class="fab far fa-lg fa-envelope"></span> </a>
-                    <p href="/"><span class="bot"></span></p>
+                    <div class="social">
+                        <a href="https://github.com/amenpunk" > <span class="fab fa-lg fa-github"></span>  </a>
+                        <a href="https://www.linkedin.com/in/ecc-code/"><span  class="fab fa-lg fa-linkedin-in"></span></a>
+                        <a href="/"><span class="fab fa-stack-overflow"></span></a>
+                        <a href="/"><span class="fab far fa-lg fa-envelope"></span> </a>
+                    </div>
+
                 </div>
             </div>
 
@@ -41,7 +51,7 @@ export function Home() {
                         </p>
                     </div>
                 </article>    
-                <article class="col-5 d-none d-md-block">
+                <article class="col-md-5 d-none d-md-block">
                     <a class="ta-bla"  href="https://github.com/amenpunk">
                         <img align="left" alt="estadisticas_github" class="tech" src="https://github-readme-stats.vercel.app/api?username=amenpunk&show_icons=true&theme=graywhite&count_private=true" />
                     </a>
@@ -49,135 +59,127 @@ export function Home() {
             </div> 
 
 
-                <aside class="row">
-                    <aside class="col-md-8 main">
+            <aside class="row">
+                <aside class="col-md-8 main">
 
-                        <div class="dev letter ">
-                            <h2 class="dev-info">Lenguajes <i class="fas fa-code"></i> </h2>
-                            <h4>Habilidades Principales</h4>
-
-
-                            <div class="skillbar clearfix " data-percent="90%">
-                                <div class="skillbar-title" style={ { background: "#46465e" } }><span>PHP</span></div>
-                                <div class="skillbar-bar" style={ { background: "#5a68a5" } }></div>
-                                <div class="skill-bar-percent">90%</div>
-                            </div>
+                    <div class="dev letter ">
+                        <h2 class="dev-info">Lenguajes <i class="fas fa-code"></i> </h2>
+                        <h4>Habilidades Principales</h4>
 
 
-                            <div class="skillbar clearfix " data-percent="85%">
-                                <div class="skillbar-title" style={ { background: "#E78625" } }><span>JavaScript</span></div>
-                                <div class="skillbar-bar" style={ { background: "#F0DB4F"  } }></div>
-                                <div class="skill-bar-percent">85%</div>
-                            </div> 
-                            
-                            <div class="skillbar clearfix " data-percent="85%">
-                                <div class="skillbar-title" style={ { background: "#0e629e" } }><span>Python</span></div>
-                                <div class="skillbar-bar" style={ { background: "#198fe3" } }></div>
-                                <div class="skill-bar-percent">85%</div>
-                            </div> 
 
-                            <div class="skillbar clearfix " data-percent="80%">
-                                <div class="skillbar-title" style={ { background: "#BF0000" } }><span>Java</span></div>
-                                <div class="skillbar-bar" style={ { background: "#DE3423" } }></div>
-                                <div class="skill-bar-percent">80%</div>
-                            </div> 
+                        <div class="skillbar clearfix " data-percent="90%">
+                            <div class="skillbar-title" style={ { background: "#E78625" } }><span>JavaScript</span></div>
+                            <div class="skillbar-bar" style={ { background: "#F0DB4F"  } }></div>
+                            <div class="skill-bar-percent">90%</div>
+                        </div> 
 
-                            <div class="skillbar clearfix " data-percent="50%">
-                                <div class="skillbar-title" style={ { background: "#1d7a27" } }><span>C#</span></div>
-                                <div class="skillbar-bar" style={ { background: "#2bab38" } }></div>
+                        <div class="skillbar clearfix " data-percent="85%">
+                            <div class="skillbar-title" style={ { background: "#0e629e" } }><span>Python</span></div>
+                            <div class="skillbar-bar" style={ { background: "#198fe3" } }></div>
+                            <div class="skill-bar-percent">85%</div>
+                        </div> 
+
+                        <div class="skillbar clearfix " data-percent="85%">
+                            <div class="skillbar-title" style={{ backgroundColor: "#46465e" } }><span>PHP</span></div>
+                            <div class="skillbar-bar" style={{ backgroundColor: "#5a68a5" } }></div>
+                            <div class="skill-bar-percent">85%</div>
+                        </div>
+
+                        <div class="skillbar clearfix " data-percent="80%">
+                            <div class="skillbar-title" style={ { background: "#BF0000" } }><span>Java</span></div>
+                            <div class="skillbar-bar" style={ { background: "#DE3423" } }></div>
+                            <div class="skill-bar-percent">80%</div>
+                        </div> 
+
+                        <div class="skillbar clearfix " data-percent="50%">
+                            <div class="skillbar-title" style={ { background: "#1d7a27" } }><span>C#</span></div>
+                            <div class="skillbar-bar" style={ { background: "#2bab38" } }></div>
                                 <div class="skill-bar-percent">50%</div>
-                            </div>
+                        </div>
 
-                        </div>      
+                    </div>      
 
-                        <div class="dev letter ">
-                            <h2 class="dev-info">Bases de Datos <i class="fas fa-database"></i> </h2>
+                    <div class="dev letter ">
+                        <h2 class="dev-info">Bases de Datos <i class="fas fa-database"></i> </h2>
 
-                            <div class="nivel letter">
-                                <p class="nivel"><i  class="fas fa-check-square tres"> </i><strong> Avanzado </strong></p>
-                                <p class="nivel"><i  class="fas fa-check-square dos"> </i><strong> Intermedio </strong></p>
-                                <p class="nivel"><i  class="fas fa-check-square uno"> </i><strong> Fundamental </strong></p>
-                            </div>       
+                        <div class="nivel letter">
+                            <p class="nivel"><i  class="fas fa-check-square tres"> </i><strong> Avanzado </strong></p>
+                            <p class="nivel"><i  class="fas fa-check-square dos"> </i><strong> Intermedio </strong></p>
+                            <p class="nivel"><i  class="fas fa-check-square uno"> </i><strong> Fundamental </strong></p>
+                        </div>       
 
-                            <p>
+                        <br/>
+                        <p >
                             Diseño y normalización de bases de datos, experencia en programación SQL por medio de 
                             consultas para manipulación y definición de datos y control de transacciones.
-                            </p>
-                            <h4>SGBD Principales:</h4>
+                        </p>
+                        <h4>SGBD Principales:</h4>
 
-                            <div>
-                                <p><i class="tres fas fa-check-square"></i><strong> Microsoft SQL Server</strong></p>
-                                <p><i class="dos fas fa-check-square"></i><strong> MySql</strong></p>
-                                <p><i class="dos fas fa-check-square"></i><strong> Maria DB</strong></p>
-                            </div>
+                        <div>
+                            <p><i class="tres fas fa-check-square"></i><strong> Microsoft SQL Server</strong></p>
+                            <p><i class="dos fas fa-check-square"></i><strong> MySql</strong></p>
+                            <p><i class="dos fas fa-check-square"></i><strong> Maria DB</strong></p>
                         </div>
+                    </div>
 
-                        <div class="dev letter ">
-                            <h2 class="dev-info">Sistemas Operativos <i class="fas fa-desktop"></i> </h2>
-                            <p>
+                    <div class="dev letter ">
+                        <h2 class="dev-info">Sistemas Operativos <i class="fas fa-desktop"></i> </h2>
+                        <p>
                             Administración de servicios en distintos sistemas opertativos, he utilizado Runit, SystemD & Init/RC
-                            </p>
-                            <p><i class="dos fas fa-check-square"></i><strong> Microsoft Windows</strong></p>
-                            <p><i class="tres fas fa-check-square"></i><strong> GNU/Linux:</strong></p>
-                            <p>
+                        </p>
+                        <p><i class="dos fas fa-check-square"></i><strong> Microsoft Windows</strong></p>
+                        <p><i class="tres fas fa-check-square"></i><strong> GNU/Linux:</strong></p>
+                        <p>
                             Distribuciones basdas en Debian & Archlinux.
-                            </p>
-                            <p><i class="uno fas fa-check-square"></i><strong> Unix</strong></p>
-                            <p>
+                        </p>
+                        <p><i class="uno fas fa-check-square"></i><strong> Unix</strong></p>
+                        <p>
                             Distros FreeBSD & NetBSD
-                            </p>
-                        </div>
+                        </p>
+                    </div>
 
-
-
-                    </aside>
-
-                    <aside class="col-md-4 comple">
-                        <div class="dev letter">
-                            <h2 class="dev-info">Frameworks & Librerias <i class="fas fa-project-diagram"></i></h2>
-
-                            <p><i class="uno fas fa-check-square"></i><strong> Laravel</strong></p>
-                            <p><i class="tres fas fa-check-square"></i><strong> Jquery</strong></p>
-                            <p><i class="tres fas fa-check-square"></i><strong> Bootstrap 4</strong></p>
-                            <p><i class="tres fas fa-check-square"></i><strong> Firebase</strong></p>
-                            <p><i class="tres fas fa-check-square"></i><strong> Express.js</strong></p>
-                            <p><i class="uno fas fa-check-square"></i><strong> .Net Core</strong></p>
-                            <p><i class="tres fas fa-check-square"></i><strong> Node JS</strong></p>
-
-                        </div>
-
-                        <div class="dev letter "  style={ { paddingTop: 0 } }>
-                            <h2 class="dev-info">Infraestructura & DevOps <i class="fas fa-project-diagram"></i></h2>
-
-                            <p><i class="tres fas fa-check-square"></i><strong> Git/Github</strong></p>
-                            <p><i class="dos fas fa-check-square"></i><strong> Microsoft Azure</strong></p>
-                            <p><i class="dos fas fa-check-square"></i><strong> Google Cloud</strong></p>
-                            <p><i class="tres fas fa-check-square"></i><strong> Terminal/Shell Script</strong></p>
-                            <p><i class="dos fas fa-check-square"></i><strong> Docker</strong></p>
-                            <p><i class="uno fas fa-check-square"></i><strong> CI/CD</strong></p>
-
-                        </div>
-
-
-                        <div class="dev letter "  style={ { paddingTop : 0 } }>
-                            <h2 class="dev-info">Otras Skills <i class="fas fa-book"></i></h2>
-
-                            <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Debuggin</strong></p>
-                            <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Estructuras de datos</strong></p>
-                            <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Algoritmos</strong></p>
-                            <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Testing</strong></p>
-                            <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Pensamiento estructurado/Multiparadigma</strong></p>
-                            <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Patrones de diseño</strong></p>
-                            <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> WebServices</strong></p>
-                            <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Curiosidad/Creatividad :)</strong></p>
-
-                        </div>
-                    </aside>
                 </aside>
 
+                <aside class="col-md-4 comple">
+                    <div class="dev letter">
+                        <h2 class="dev-info">Frameworks & Librerias <i class="fas fa-project-diagram"></i></h2>
+                        <p><i class="uno fas fa-check-square"></i><strong> Laravel</strong></p>
+                        <p><i class="tres fas fa-check-square"></i><strong> Jquery</strong></p>
+                        <p><i class="tres fas fa-check-square"></i><strong> Bootstrap 4</strong></p>
+                        <p><i class="tres fas fa-check-square"></i><strong> Firebase</strong></p>
+                        <p><i class="tres fas fa-check-square"></i><strong> Express.js</strong></p>
+                        <p><i class="uno fas fa-check-square"></i><strong> .Net Core</strong></p>
+                        <p><i class="tres fas fa-check-square"></i><strong> Node JS</strong></p>
+
+                    </div>
+
+                    <div class="dev letter "  style={ { paddingTop: 0 } }>
+                        <h2 class="dev-info">Infraestructura & DevOps <i class="fas fa-project-diagram"></i></h2>
+                        <p><i class="tres fas fa-check-square"></i><strong> Git/Github</strong></p>
+                        <p><i class="dos fas fa-check-square"></i><strong> Microsoft Azure</strong></p>
+                        <p><i class="dos fas fa-check-square"></i><strong> Google Cloud</strong></p>
+                        <p><i class="tres fas fa-check-square"></i><strong> Terminal/Shell Script</strong></p>
+                        <p><i class="dos fas fa-check-square"></i><strong> Docker</strong></p>
+                        <p><i class="uno fas fa-check-square"></i><strong> CI/CD</strong></p>
+
+                    </div>
 
 
+                    <div class="dev letter "  style={ { paddingTop : 0 } }>
+                        <h2 class="dev-info">Otras Skills <i class="fas fa-book"></i></h2>
+                        <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Debuggin</strong></p>
+                        <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Estructuras de datos</strong></p>
+                        <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Algoritmos</strong></p>
+                        <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Testing</strong></p>
+                        <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Pensamiento estructurado/Multiparadigma</strong></p>
+                        <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Patrones de diseño</strong></p>
+                        <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> WebServices</strong></p>
+                        <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Curiosidad/Creatividad :)</strong></p>
+                    </div>
 
+                </aside>
+            </aside>
 
         </>
     )
