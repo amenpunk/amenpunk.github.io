@@ -41,7 +41,7 @@ export default class Header extends React.Component{
                                 <Link onClick={this.hiddeNav} to="/index">Sobre Mi</Link>
                                 <Link onClick={this.hiddeNav} to="/work">Portafolio</Link>
                                 <Link onClick={this.hiddeNav} to="/unix">Workflow</Link>
-                                <Link onClick={this.hiddeNav} to="/mas">Otros</Link>
+                                <Link onClick={this.hiddeNav} to="/mas">Otro</Link>
                             </div>
                             <Link to="#" class="icon" onClick={ this.myFunction }>
                                 <i class="fa fa-bars"></i>
