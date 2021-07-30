@@ -1,6 +1,8 @@
 import React from "react";
 import {  Switch, Route, Link } from "react-router-dom";
 import { Home } from './Home';
+import { Portafolio } from './Portafolio';
+import { Unix } from './Unix';
 
 export default class Header extends React.Component{
 
@@ -54,8 +56,12 @@ export default class Header extends React.Component{
                     <Route path="/index">
                         <Home/>
                     </Route>
-                    <Route path="/work"> mi trabajo</Route>
-                    <Route path="/unix"> linux master race</Route>
+                    <Route path="/work">
+                        <Portafolio/>
+                    </Route>
+                    <Route path="/unix">
+                        <Unix/>
+                    </Route>
                     <Route path="/more"> more</Route>
                     <Route path="/">
                         <Home/>
