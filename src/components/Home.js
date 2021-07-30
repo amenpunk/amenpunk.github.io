@@ -38,16 +38,13 @@ export function Home() {
 
 
             <div class="row align-items-center">
-                <article class="col text-center aboutm letter">
+                <article class="col-md-7 text-center aboutm letter">
                     <div class="row align-items-center">
                         <div class="col-md-3">
-                            <img alt="profile_picture" class="umg-logo" src="https://flow.org/assets/featurette-faster-56e57b5eb50445d2903590e1553797e4637fcc0aa779b09bc9c5c8a8c08a1645.gif"/>
+                            <img alt="vim_gopher" class="umg-logo" src="Me.png"/>
                         </div>
-                        <p class="col ">    
-                            Estudiante de Ingeniería en Sistemas en la Universidad Mariano Gálvez de Guatemala,
-                            me encanta utilizar mi tiempo leyendo y escribiendo código, me apasiona analizar, administrar y estructurar datos,
-                            pero no dejo de lado Ux/Ui, entusiasta del Open Source, Linux y 100% Autodidacta. 
-                            En camino a ser Full Stack Developer.
+                        <p class="col ">
+                            Hola, bienvenido, me llamo Edgar, soy Full Stack Developer con ya más de 3 años de experiencia escribiendo código en distintos ecosistemas. Comencé haciendo aplicaciones con Visual Basic, para luego explorar el mundo de Java y posteriormente quede fascinado con la programación funcional de Javascript ya que me considero un fan de React JS, sin embargo encuentro práctico escribir Scripts en Python de vez en cuando, siempre estoy buscando la próxima tecnología de la cual aprender, actualmente mis intereses son Haskell, Rust y Go.
                         </p>
                     </div>
                 </article>    
@@ -102,24 +99,15 @@ export function Home() {
 
                     <div class="dev letter ">
                         <h2 class="dev-info">Bases de Datos <i class="fas fa-database"></i> </h2>
-
-                        <div class="nivel letter">
-                            <p class="nivel"><i  class="fas fa-check-square tres"> </i><strong> Avanzado </strong></p>
-                            <p class="nivel"><i  class="fas fa-check-square dos"> </i><strong> Intermedio </strong></p>
-                            <p class="nivel"><i  class="fas fa-check-square uno"> </i><strong> Fundamental </strong></p>
-                        </div>       
-
-                        <br/>
                         <p >
                             Diseño y normalización de bases de datos, experencia en programación SQL por medio de 
-                            consultas para manipulación y definición de datos y control de transacciones.
+                            consultas para manipulación y definición de datos y control de transacciones, asi como modelado NoSQL
                         </p>
-                        <h4>SGBD Principales:</h4>
-
                         <div>
-                            <p><i class="tres fas fa-check-square"></i><strong> Microsoft SQL Server</strong></p>
-                            <p><i class="dos fas fa-check-square"></i><strong> MySql</strong></p>
-                            <p><i class="dos fas fa-check-square"></i><strong> Maria DB</strong></p>
+                            <p><i class="fas fa-check-square"></i><strong> Microsoft SQL Server</strong></p>
+                            <p><i class="fas fa-check-square"></i><strong> MySql</strong></p>
+                            <p><i class="fas fa-check-square"></i><strong> Maria DB</strong></p>
+                            <p><i class="fas fa-check-square"></i><strong> Mongo DB</strong></p>
                         </div>
                     </div>
 
@@ -128,12 +116,12 @@ export function Home() {
                         <p>
                             Administración de servicios en distintos sistemas opertativos, he utilizado Runit, SystemD & Init/RC
                         </p>
-                        <p><i class="dos fas fa-check-square"></i><strong> Microsoft Windows</strong></p>
-                        <p><i class="tres fas fa-check-square"></i><strong> GNU/Linux:</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> Microsoft Windows</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> GNU/Linux:</strong></p>
                         <p>
                             Distribuciones basdas en Debian & Archlinux.
                         </p>
-                        <p><i class="uno fas fa-check-square"></i><strong> Unix</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> Unix</strong></p>
                         <p>
                             Distros FreeBSD & NetBSD
                         </p>
@@ -144,24 +132,28 @@ export function Home() {
                 <aside class="col-md-4 comple">
                     <div class="dev letter">
                         <h2 class="dev-info">Frameworks & Librerias <i class="fas fa-project-diagram"></i></h2>
-                        <p><i class="uno fas fa-check-square"></i><strong> Laravel</strong></p>
-                        <p><i class="tres fas fa-check-square"></i><strong> Jquery</strong></p>
-                        <p><i class="tres fas fa-check-square"></i><strong> Bootstrap 4</strong></p>
-                        <p><i class="tres fas fa-check-square"></i><strong> Firebase</strong></p>
-                        <p><i class="tres fas fa-check-square"></i><strong> Express.js</strong></p>
-                        <p><i class="uno fas fa-check-square"></i><strong> .Net Core</strong></p>
-                        <p><i class="tres fas fa-check-square"></i><strong> Node JS</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> Laravel / CodeIgniter</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> React / React Native</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> Flask / Django</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> Jquery</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> Bootstrap</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> Firebase</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> Dialogflow</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> Express.js</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> .Net Core</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> Node JS</strong></p>
 
                     </div>
 
                     <div class="dev letter "  style={ { paddingTop: 0 } }>
                         <h2 class="dev-info">Infraestructura & DevOps <i class="fas fa-project-diagram"></i></h2>
-                        <p><i class="tres fas fa-check-square"></i><strong> Git/Github</strong></p>
-                        <p><i class="dos fas fa-check-square"></i><strong> Microsoft Azure</strong></p>
-                        <p><i class="dos fas fa-check-square"></i><strong> Google Cloud</strong></p>
-                        <p><i class="tres fas fa-check-square"></i><strong> Terminal/Shell Script</strong></p>
-                        <p><i class="dos fas fa-check-square"></i><strong> Docker</strong></p>
-                        <p><i class="uno fas fa-check-square"></i><strong> CI/CD</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> Git/Github</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> Microsoft Azure</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> Google Cloud</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> Terminal/Shell Script</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> Docker</strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> CI/CD </strong></p>
+                        <p><i class="fas fa-check-square"></i><strong> Jenkins </strong></p>
 
                     </div>
 
@@ -170,12 +162,9 @@ export function Home() {
                         <h2 class="dev-info">Otras Skills <i class="fas fa-book"></i></h2>
                         <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Debuggin</strong></p>
                         <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Estructuras de datos</strong></p>
-                        <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Algoritmos</strong></p>
+                        <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Algoritmos </strong></p>
                         <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Testing</strong></p>
-                        <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Pensamiento estructurado/Multiparadigma</strong></p>
                         <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Patrones de diseño</strong></p>
-                        <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> WebServices</strong></p>
-                        <p><i style={{ color:'black' }} class="fas fa-check-square"></i><strong> Curiosidad/Creatividad :)</strong></p>
                     </div>
 
                 </aside>
