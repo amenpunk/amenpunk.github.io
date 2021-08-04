@@ -17,7 +17,7 @@ export function Home() {
         <>
             <div class="row justify-content-center ff letter">
                 <div class="col-auto cover">
-                    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQF0PmyXp93Zcw/profile-displayphoto-shrink_200_200/0/1594601021043?e=1632960000&v=beta&t=QPMrooLKO8JPz4eWyPUz24SCyGDcuNjkksY_zYNwZYI" class="zoom figure-img img-fluid cover" alt=""/>
+                    <img alt="gophervim" src="https://media-exp1.licdn.com/dms/image/C4E03AQF0PmyXp93Zcw/profile-displayphoto-shrink_200_200/0/1594601021043?e=1632960000&v=beta&t=QPMrooLKO8JPz4eWyPUz24SCyGDcuNjkksY_zYNwZYI" class="zoom figure-img img-fluid cover" alt=""/>
                 </div>
                 <div class="col-auto">
                     <p class="htxt">Información de Contacto</p>
