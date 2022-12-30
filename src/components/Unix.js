@@ -12,19 +12,19 @@ export function Unix (){
             <div class="row">
                 <aside class="main col">
                     <div id="alin">
-                        <img class="img-res" src="img/0.jpg"/>
+                        <img alt="test" class="img-res" src="img/0.jpg"/>
 
-                        <img class="img-res" src="img/a.jpg"/>
+                        <img alt="test" class="img-res" src="img/a.jpg"/>
 
-                        <img class="img-res" src="img/1.jpg"/>
+                        <img alt="test" class="img-res" src="img/1.jpg"/>
 
-                        <img class="img-res" src="img/3.jpg"/>
+                        <img alt="test" class="img-res" src="img/3.jpg"/>
 
-                        <img class="img-res" src="img/6.jpg"/>
+                        <img alt="test" class="img-res" src="img/6.jpg"/>
 
-                        <img class="img-res" src="img/5.jpg"/>
+                        <img alt="test" class="img-res" src="img/5.jpg"/>
 
-                        <img class="img-res" src="img/2.jpg"/>
+                        <img alt="test" class="img-res" src="img/2.jpg"/>
                     </div>
                 </aside>
             </div>
